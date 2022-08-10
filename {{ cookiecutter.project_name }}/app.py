@@ -1,6 +1,6 @@
 from chalice import Chalice
 
-app = Chalice(app_name='architecture')
+app = Chalice(app_name='{{ cookiecutter.project_name }}')
 
 
 @app.route('/')
