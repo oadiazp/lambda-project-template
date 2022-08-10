@@ -8,3 +8,6 @@ lint:
 test:
 	pytest tests/
 	behave
+
+deploy:
+	chalice deploy
