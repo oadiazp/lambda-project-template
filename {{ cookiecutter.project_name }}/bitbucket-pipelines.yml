@@ -1,0 +1,18 @@
+image: python:3.9
+
+pipelines:
+  default:
+    - step:
+        name: Lint
+        caches:
+          - pip
+        script:
+          - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          - make lint
+    - step:
+        name: Test
+        caches:
+          - pip
+        script:
+          - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          - make test
