@@ -1,3 +1,4 @@
+chalice
 pytest
 behave
 jsonpath_ng
