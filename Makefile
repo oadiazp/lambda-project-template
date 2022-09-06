@@ -8,8 +8,7 @@ lint:
 	flake8 --exclude .venv .
 
 test:
-	#pytest tests/
-	behave
+	pytest tests/
 
 deploy:
 	chalice deploy
