@@ -16,3 +16,9 @@ deploy:
 
 clean:
 	python clean_functions.py $(PROJECT)
+
+redeploy:
+	python clean_functions.py $(PROJECT) && \
+ 	rm -Rf .chalice/deployed && \
+ 	chalice deploy
+
